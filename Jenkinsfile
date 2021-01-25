@@ -22,7 +22,7 @@ pipeline {
         stage('Updating packages') {
 
             steps{
-                sh 'sudo yum install $(cat packages.txt)'
+                sh 'sudo yum install -y $(cat packages.txt)'
 
             }
         }

@@ -11,7 +11,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(result,15)
 
     def test_add_2(self):
-        result = 10 + 2
+        result = 10 + 5
         self.assertEqual(result,15)
 
 

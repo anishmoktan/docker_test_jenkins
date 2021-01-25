@@ -19,10 +19,10 @@ pipeline {
     
     // Building Docker images
     stages {
-        stage('Updating packages') {
+        stage('Updating python packages') {
 
             steps{
-                sh 'sudo yum install -y $(cat packages.txt)'
+                sh 'pip3 install -r requirements.txt'
 
             }
         }

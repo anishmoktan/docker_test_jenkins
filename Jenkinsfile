@@ -19,13 +19,22 @@ pipeline {
     
     // Building Docker images
     stages {
+        stage('Updating packages') {
+
+            steps{
+                sh 'sudo yum install $(cat packages.txt)'
+
+            }
+        }
         stage('Testing') {
-      steps{
-        sh 'python3 Test.py'
 
-      }
-    }
+            steps{
+                sh 'python3 Test.py'
 
-    }
+            }
+        }
+
+     }
+
     
 }

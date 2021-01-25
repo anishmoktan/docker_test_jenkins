@@ -22,7 +22,7 @@ pipeline {
         stage('Updating python packages') {
 
             steps{
-                sh 'sudo -u admin pip3 install -r requirements.txt'
+                sh 'sudo -u ec2-user pip3 install -r requirements.txt'
 
             }
         }

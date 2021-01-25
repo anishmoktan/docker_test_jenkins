@@ -14,5 +14,6 @@ class TestCalc(unittest.TestCase):
         result = 10 + 2
         self.assertEqual(result,15)
 
+
 if __name__ == '__main__':
     unittest.main()
